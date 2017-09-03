@@ -14,7 +14,11 @@ private int[] data = new int[]{-1,2,4,9,6,4,7,-100,320,43,2,5,7,9,11,21,19,18,20
 		
 		return data;
 	}
-	// method finds the minimum of an unsorted array complexity of order n  
+
+
+	// method finds the minimum of an unsorted array 
+	// time complexity = O(n) 
+	// space complexity = O(1)  
 	public int findMin(int[] data){
 		if(data == null || data.length == 0){
 			return 0;
@@ -27,6 +31,4 @@ private int[] data = new int[]{-1,2,4,9,6,4,7,-100,320,43,2,5,7,9,11,21,19,18,20
 		}
 		return min;
 	}
-
-
 }
