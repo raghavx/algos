@@ -36,7 +36,7 @@ public class HeapSort{
 		int left, right, max, temp;
 		left = leftChild(i);
 		right = rightChild(i);
-		System.out.println("left\t"+left);
+		// System.out.println("left\t"+left);
 		// System.exit(0);
 		if(left != -1 && this.data[left] > this.data[i]){
 			max = left;
@@ -53,7 +53,7 @@ public class HeapSort{
 			this.data[max] = temp;
 		 
 		
-			System.out.println(max);
+		//	System.out.println(max);
 			percolateDown(max);
 		}	
 	}	
@@ -69,7 +69,7 @@ public class HeapSort{
 	// O(1)
 	public int leftChild(int i){
 		int left = 2 * i +1;
-		System.out.println("In left child count = "+count+" and left = "+left);
+		//	System.out.println("In left child count = "+count+" and left = "+left);
 		if(left < count){
 			return left;
 		}else{
