@@ -13,10 +13,18 @@ public class HeapSort{
 	}
 	
 	public static void main(String[] args){
-		int[] data = new int[]{6,0,3,4,5,1,10};
+		int[] data = new int[]{6,0,3,4,30,5,1,10};
 		HeapSort hs = new HeapSort(data);
 		hs.buildHeap();
 		System.out.println(Arrays.toString(data));
+		for(int i = 0; i < data.length; i++){
+			System.out.println("\t"+data[0]);
+			System.out.println("\t"+Arrays.toString(data));
+			data[0] = Integer.MIN_VALUE;
+			System.out.println("\t\t"+Arrays.toString(data));
+			hs.buildHeap();
+			System.out.println("\t\t\t"+Arrays.toString(data));
+		}
 	}
 	
 	public void buildHeap(){
